@@ -16,7 +16,7 @@
 		<div class="lowin-wrapper">
 			<div class="lowin-box lowin-login">
 				<div class="lowin-box-inner">
-					<form action="/Home/Login" method="post">
+					<form action="/Login/Login" method="post">
 						<p>Sign in to continue</p>
                         
 						<div class="lowin-group">
@@ -40,19 +40,19 @@
 
 			<div class="lowin-box lowin-register">
 				<div class="lowin-box-inner">
-					<form>
+					<form action="/Login/Register" method="post">
 						<p>Let's create your account</p>
 						<div class="lowin-group">
 							<label>Name</label>
-							<input type="text" name="name" autocomplete="name" class="lowin-input">
+							<input type="text" name="rname" autocomplete="name" class="lowin-input">
 						</div>
 						<div class="lowin-group">
 							<label>Email</label>
-							<input type="email" autocomplete="email" name="email" class="lowin-input">
+							<input type="email" autocomplete="email" name="remail" class="lowin-input">
 						</div>
 						<div class="lowin-group">
 							<label>Password</label>
-							<input type="password" name="password" autocomplete="current-password" class="lowin-input">
+							<input type="password" name="rpassword" autocomplete="current-password" class="lowin-input">
 						</div>
 						<button class="lowin-btn">
 							Sign Up
