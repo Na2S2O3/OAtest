@@ -40,7 +40,8 @@ namespace oatest1.Controllers
             var userinfo2 = LoginModel.Login(username, password);
             if (userinfo2 != null)
             {
-                return View("~/Views/Home/Index.cshtml");
+                //return View("~/Views/HomePage/form.cshtml");
+                return RedirectToRoute(new { controller = "HomePage", action = "Form" });
             }
             else
             {
